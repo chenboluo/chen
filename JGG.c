@@ -10,7 +10,7 @@
 #define down_broad 25
 
 void Appearance();         //游戏开始界面 1
- 
+
 
 void regulation();         //游戏规则  3
 
@@ -18,13 +18,13 @@ void regulation();         //游戏规则  3
 void instruction();        //按键说明  4
 
 
-void Game_Failure();       //游戏模式结束 5 
+void Game_Failure();       //游戏模式结束 5
 
 void choose();             //游戏界面选择 6
 
-void click1();             //游戏模式1 7 
+void click1();             //游戏模式1 7
 
-void click2();             //游戏模式2 8 
+void click2();             //游戏模式2 8
 
 void makejet();            //模式2打印飞机  9
 
@@ -46,6 +46,7 @@ void Game_Failure2();		//模式1的结束界面
 void opendata1();
 void opendata2();
 void choosedata();
+
 void Broad();
 
 
@@ -979,7 +980,7 @@ out1:
             switch (ch)
             {
             case 72:   //上
-                if (plane1.y > 8) 
+                if (plane1.y > 8)
                 {
                     BlankPlane(&plane1);
                     if (judge(plane1.x, plane1.y - 1))
